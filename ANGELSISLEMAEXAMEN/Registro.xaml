@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ANGELSISLEMAEXAMEN.Registro">
+    <ContentPage.Content>
+        <Grid VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Registro de Curso" FontSize="Default" 
+                   HorizontalOptions="Center"/>
+            <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Source="logoU" Aspect="AspectFit" />
+
+            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Usuario" FontSize="Default" 
+                   x:Name="Usuario" HorizontalOptions="Center"/>
+
+            <Label Grid.Row="3" Grid.Column="0" Text="ingrese Nombre"  FontSize="15"/>
+            <Entry Grid.Row="3" Grid.Column="1" x:Name="Nombre"/>
+
+            <Label Grid.Row="4" Grid.Column="0" Text="Pago Inicial:" FontSize="15"/>
+            <Entry Grid.Row="4" Grid.Column="1" x:Name="Pago1"/>
+
+            <Label Grid.Row="5" Grid.Column="0" Text="Pago Mensual:" FontSize="15"/>
+            <Entry Grid.Row="5" Grid.Column="1" x:Name="Pago2"/>
+
+            <Button Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" Text="Guardar" 
+                    x:Name="Guardar" Clicked="Guardar_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
